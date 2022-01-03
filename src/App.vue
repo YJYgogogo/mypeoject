@@ -1,32 +1,44 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div class="container">
+    <div class="header">头部</div>
+    <div class="contant">内容区</div>
+    <div class="footer">footer</div>
   </div>
 </template>
+<script>
+export default {
+  data () {
+    return {
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
     }
+  }
+}
+</script>
+<style lang="scss">
+html{
+  font-size: 26.6666667vw;//设计稿以iphone6为基准 100/375 *100
+}
+body{
+  font-size: 14px;
+}
+html,body,.container{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  .header{
+    height: 0.44rem;
+    background: red;
+  }
+  .contant{
+    flex: 1;
+    overflow: auto;//产生滚动条
+  }
+  .footer{
+    height: 0.44rem;
+    background: grey;
   }
 }
 </style>

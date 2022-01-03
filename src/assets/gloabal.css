@@ -1,0 +1,23 @@
+@charset"utf-8"; *{margin:0;padding:0;} 
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td a{ margin:0; padding:0; }
+
+body{
+　　font-family:"微软雅黑","宋体","Arial";
+　　color:#666; 
+　　font-size:14px; 
+}
+
+img,input{border:none;} 
+
+input,select,textarea{outline:none;} 
+
+select,input,img{vertical-align:middle;}
+
+ul,ol,li{list-style-type:none;} 
+
+a{text-decoration:none; color:#72ace3;} 
+a:focus{outline:none; -moz-outline:none} 
+
+table{border-collapse:collapse;} 
